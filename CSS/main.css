@@ -1,0 +1,1586 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 2000px;
+    height: 1500px;
+}
+.navBar{
+    background: linear-gradient(130deg ,rgba(0, 0, 0, 0.85) 70%,rgb(157, 0, 255)) ;
+    background-color: rgb(102, 0, 191);
+    position: fixed;
+    z-index: 50000000000;
+    width: 100vw;
+}
+.navBar .nav{
+    justify-content: space-between;
+    color: white;
+    display: flex;
+}
+.navBar .nav .logo img{
+    margin: 15px;
+    height: 40px;
+    width: auto;
+}
+.navBar .nav .navItem{
+    justify-content: space-around;
+    padding: 0px 25px;
+    display: flex;
+}
+.navBar .nav .navItem .toggler i{
+    color: white;
+    margin: 15px;
+    padding: 5px;   
+    font-size: 30px;
+    display: none;
+}
+.navBar .nav .navItem .socialLink{
+    margin: 0px 140px 0px 60px;
+    padding: 15px;
+}
+.navBar .nav .navItem .socialLink i{
+    margin: 10px;
+}
+.navBar .nav .navItem .socialLink a i{
+    color: white;
+}
+.navBar .nav .navItem .socialLink i:hover{
+    transform: rotate(360deg) scale(2,2);
+    transition: all 1s;
+}
+.navBar .nav .navItem ul{
+    list-style-type: none;
+    display: flex;
+}
+.navBar .nav .navItem li{
+    margin: 20px 30px;
+    font-size: 20px;
+}
+.navBar .nav .navItem ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navBar .nav .navItem li:hover{
+    transform: scale(1.2,1.2);
+    transition: all 0.5s;
+    font-weight: bold;
+}
+.layout{
+    background-image: url(../img/bbbbbb.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+}
+.home{
+    background-color: rgba(0, 0, 0, 0.438);
+    height: 100vh;
+}
+.home .caption{
+    text-align: center;
+    position: relative;
+    top: 45%;
+}
+.home .caption h1{
+    text-shadow: 0px 2px 15px blueviolet;
+    font-size: 40px;
+    padding: 15px;
+    color:white;
+}
+.home .caption button{
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    width: 160px;
+    height: 50px;
+}
+.home .caption button a{
+    text-decoration: none;
+    color: white;
+}
+.home .caption button:hover{
+    background-color: blueviolet;
+    transition: all 0.5s;
+}
+.about{
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 110vh;
+}
+.about .line{
+    padding: 70px 225px 5px;
+    position: relative;
+    font-size: 25px;
+    color: white;
+    display: flex;
+}
+.about .line::after{
+    background-color: white;
+    position: absolute;
+    width: 110px;
+    left: 315px;
+    height: 1px;
+    content: "";
+    bottom: 20px;
+}
+.about .aboutDetails{
+    margin: -10px 220px;
+    color: white;
+    display: flex;
+}
+.about .aboutDetails .aboutCaption h1{
+    padding: 0px 0px 20px;
+    font-size: 40px;
+}
+.about .aboutDetails .aboutCaption p{
+    font-weight: bold;
+    font-size: 25px;
+}
+.about .aboutDetails .aboutCaption .TMain{
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 15px;
+}
+.about .aboutDetails .aboutCaption .point1{
+    display: flex;
+}
+.about .aboutDetails .aboutCaption .point1 i{
+    margin: 10px 0px;
+}
+.about .aboutDetails .aboutCaption .point2{
+    display: flex;
+}
+.about .aboutDetails .aboutCaption .point2 i{
+    margin: 10px 0px;
+}
+.about .aboutDetails .aboutCaption .point3{
+    display: flex;
+}
+.about .aboutDetails .aboutCaption .point3 i{
+    margin: 10px 0px;
+}
+.about .aboutDetails .aboutCaption h6{
+    font-size: 15px; 
+    margin: 10px;
+}
+.about .aboutDetails .aboutCaption button{
+    border: 1px solid blueviolet;
+    background-color: blueviolet;
+    border-radius: 50px;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 120px;
+}
+.about .aboutDetails .aboutCaption button a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+.about .img3Dos img{
+    height: 500px;
+    width: auto;
+}
+.footerData{
+    background-color: rgb(29, 29, 29);
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    padding: 50px;
+    display: flex;
+    height: 30vh;
+}
+.footerData .contact{
+    padding: 30x;
+}
+.footerData .contact h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.footerData .usefulLink{
+    padding: 30x;
+}
+.footerData .usefulLink i{
+    background-color: blueviolet;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 10px;
+    margin: auto;
+    height: 20px;
+    width: 20px;
+}
+.footerData .usefulLink a i{
+    color: white;
+}
+.footerData .usefulLink i:hover{
+    transform: scale(1.2,1.2);
+    transition: all 0.5s;
+}
+.footerData .usefulLink h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.footerData .ourSponsors{
+    justify-content: center;
+}
+.footerData .ourSponsors h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.footerData .ourSponsors .amit{
+    display: flex;
+    padding: 15px;
+}
+.footerData .ourSponsors .amit img{
+    height: 35px;
+}
+.footerData .ourSponsors .amit a{
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: 20px;
+    color:white;
+    padding: 5px;
+}
+.footerData .ourSponsors .ebda3{
+    margin: 0px 40px;
+    display: flex;
+}
+.footerData .ourSponsors .ebda3 img{
+    height: 50px;
+}
+.footerData .ourSponsors .ebda3 a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    color:white;
+}
+.footerData .footerEnd{
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    left:0;
+}
+.footerData p{
+    font-size: 16px;
+}
+.footerData .footerEnd p{
+    font-weight: bold;
+    font-size: 20px;
+}
+/*-----------------------------------------------*/
+/*Event*/
+.event{
+    height: 800px;
+}
+.containerEvent{
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+}
+.row{
+    justify-content: center;
+    text-align: center;
+    width: 750px;
+    margin: auto;
+}
+.footerData .footerEnd p a{
+    text-decoration: none;
+    color: red;
+}
+.row{
+    position: relative;
+    color: white;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0.64);
+    padding: 5px;
+}
+.row .events{
+    background-color: rgb(0, 0, 0) ;
+    justify-content: center;
+    display: flex;
+    margin: 25px;  
+    padding: 5px;
+}
+.row .events h2:hover{
+    transform: scale(1.1,1.1);
+    text-decoration: underline;
+    transition: all 0.5;
+}
+.row .events i{
+    text-align: center;
+    margin: 5px 15px;
+}
+.eventfooterEnd{
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    left:0;
+}
+.footerData .eventfooterEnd p{
+    font-weight: bold;
+    font-size: 20px;
+}
+.footerData .eventfooterEnd p a{
+    text-decoration: none;
+    color: red;
+}
+/*-----------------------------------------------*/
+/*About*/
+.aboutCSS{
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    width: 100%;    
+}
+.aboutLayout{
+    height: 100vh;
+}
+.aboutUS{
+    justify-content: space-around;
+    background-color: black;
+    padding: 80px 0px 40px;
+    color: white;
+    width: 100%;
+}
+.aboutUS h1{
+    text-shadow: 0px 2px 15px blueviolet;
+    margin-top: 5px;
+    font-size: 30px;
+}
+.aboutUS p{
+    margin:10px 40px;
+}
+.more{
+    position: relative;
+    color: white;
+    top: 150px;
+    top: 100px;
+}
+.moreHeder{
+    margin: 15px 140px;
+    text-align: left;
+}
+.moreHeder h2{
+    color: gainsboro;
+    margin: 10px 50px;
+    font-size: 15px;
+}
+.moreHeder h2::after{
+    background-color: gainsboro;
+    position: absolute;
+    width: 110px;
+    left: 320px;
+    height: 1px;
+    content: "";
+    top: 8px;
+}
+.moreHeder h1{
+    margin: 10px 50px;
+    font-size: 30px;
+}
+.moreOur{
+    justify-content: space-between;
+    margin: 10px 120px;
+    display: flex;
+    height: 350px;
+}
+.moreOur .vision{
+    padding: 50px;
+    width: 40%;
+}
+.moreOur .vision h1{
+    margin: 15px;
+}
+.moreOur .vision h1:hover{
+    transition: all 0.5s;
+    color: green;
+}
+.moreOur .vision i{
+    text-shadow: 0px 0px 20px blueviolet;
+    font-size: 40px;
+}
+.moreOur .mission{
+    padding: 40px;
+    width: 40%;
+}
+.moreOur .mission i{
+    text-shadow: 0px 0px 20px blueviolet;
+    font-size: 40px;
+}
+.moreOur .mission h1{
+    margin: 10px;
+}
+.moreOur .mission h1:hover{
+    transition: all 0.5s;
+    color: green;
+}
+.soul{
+    margin: 0px 200px;
+    display: flex;
+    padding: 15px;
+}
+.soul .contantAbout{
+    text-align: left;
+    margin-top: 5%;
+}
+.soul .contantAbout h1{
+    text-shadow: 0px 0px 20px blueviolet;
+    font-size: 36px;
+}
+.soul .contantAbout p{
+    font-size: 20px;
+}
+.soul .contantAboutimg img{
+    box-shadow: 10px 5px 5px black;
+    border-radius: 40px;
+    height: 300px;
+    width: 500px;
+}
+.brain{
+    margin: 0px 200px;
+    display: flex;
+    padding: 15px;
+}
+.brain .contantAbout{
+    text-align: left;
+}
+.brain .contantAbout h1{
+    text-shadow: 0px 0px 20px blueviolet;
+    font-size: 36px;
+}
+.brain .contantAbout p{
+    font-size: 20px;
+}
+.brain .contantAboutimg img{
+    box-shadow: 10px 5px 5px black;
+    border-radius: 40px;
+    height: 300px;
+    width: 500px;
+}
+.acadimic{
+    margin: 0px 200px 150px;
+    display: flex;
+    padding: 15px;
+}
+.acadimic .contantAbout{
+    text-align: left;
+    margin-top: 5%;
+}
+.acadimic .contantAbout h1{
+    text-shadow: 0px 0px 20px blueviolet;
+    font-size: 36px;
+}
+.acadimic .contantAbout p{
+    font-size: 20px;
+}
+.acadimic .contantAboutimg img{
+    box-shadow: 10px 5px 5px black;
+    border-radius: 40px;
+    height: 300px;
+    width: 500px;
+}
+.footerEndAbout{
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    left:0;
+}
+.footerEndAbout p{
+    font-weight: bold;
+    font-size: 20px;
+}
+.footerEndAbout p a{
+    text-decoration: none;
+    color: red;
+}
+
+@media (max-width: 1400px){
+    .about .aboutDetails .aboutCaption h1{
+        padding: 0px 0px 20px;
+        font-size: 35px;
+    }
+    .about .aboutDetails .aboutCaption p{
+        font-size: 18px;
+    }
+    .about .aboutDetails .aboutCaption .TMain{
+        padding: 8px;
+        font-size: 13px;
+    }
+    .about .aboutDetails .aboutCaption .point1 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption .point2 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption .point3 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption h6{
+        font-size: 15px; 
+        margin: 10px;
+    }
+    .about .aboutDetails .aboutCaption button{
+        border-radius: 50px;
+        margin: 10px 0px;
+        padding: 10px;
+        width: 120px;
+    }
+    .about .aboutDetails .aboutCaption button a{
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .about .img3Dos img{
+        height: 400px;
+        width: auto;
+    }
+    .aboutCSS{
+        width: 100%;    
+    }
+    .aboutLayout{
+        height: 100vh;
+    }
+    .aboutUS{
+        padding: 80px 0px 40px;
+        width: 100%;
+    }
+    .aboutUS h1{
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    .aboutUS p{
+        margin:10px 40px;
+    }
+    .more{
+        position: relative;
+        top: 150px;
+        top: 100px;
+    }
+    .moreHeder{
+        margin: 15px 140px;
+        text-align: left;
+    }
+    .moreHeder h2{
+        margin: 10px 50px;
+        font-size: 15px;
+    }
+    .moreHeder h2::after{
+        position: absolute;
+        width: 110px;
+        left: 320px;
+        height: 1px;
+        content: "";
+        top: 8px;
+    }
+    .moreHeder h1{
+        margin: 10px 50px;
+        font-size: 30px;
+    }
+    .moreOur{
+        margin: 10px 120px;
+        height: 350px;
+    }
+    .moreOur .vision{
+        padding: 50px;
+        width: 40%;
+    }
+    .moreOur .vision h1{
+        margin: 15px;
+    }
+    .moreOur .vision i{
+        font-size: 40px;
+    }
+    .moreOur .mission{
+        padding: 40px;
+        width: 40%;
+    }
+    .moreOur .mission i{
+        font-size: 40px;
+    }
+    .moreOur .mission h1{
+        margin: 10px;
+    }
+    .soul{
+        margin: 0px 200px;
+        padding: 15px;
+    }
+    .soul .contantAbout{
+        text-align: left;
+        margin-top: 5%;
+    }
+    .soul .contantAbout h1{
+        font-size: 30px;
+    }
+    .soul .contantAbout p{
+        font-size: 16px;
+    }
+    .soul .contantAboutimg img{
+        border-radius: 40px;
+        height: 280px;
+        width: 400px;
+    }
+    .brain{
+        margin: 0px 200px;
+        padding: 15px;
+    }
+    .brain .contantAbout{
+        text-align: left;
+    }
+    .brain .contantAbout h1{
+        font-size: 30px;
+    }
+    .brain .contantAbout p{
+        font-size: 16px;
+    }
+    .brain .contantAboutimg img{
+        border-radius: 40px;
+        height: 280px;
+        width: 400px;
+    }
+    .acadimic{
+        margin: 0px 200px 150px;
+        padding: 15px;
+    }
+    .acadimic .contantAbout{
+        text-align: left;
+        margin-top: 5%;
+    }
+    .acadimic .contantAbout h1{
+        font-size: 30px;
+    }
+    .acadimic .contantAbout p{
+        font-size: 16px;
+    }
+    .acadimic .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px;
+        height: 280px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 1200px){
+    .about{
+        height: 85vh;
+    }
+    .about .line{
+        padding: 60px 100px 5px;
+    }
+    .about .line::after{
+        left: 190px;
+    }
+    .about .aboutDetails{
+        margin: 20px 100px;
+    }
+    .about .aboutDetails .aboutCaption h1{
+        padding: 0px 0px 20px;
+        font-size: 30px;
+    }
+    .about .aboutDetails .aboutCaption p{
+        font-size: 18px;
+    }
+    .about .aboutDetails .aboutCaption .TMain{
+        padding: 8px;
+        font-size: 13px;
+    }
+    .about .aboutDetails .aboutCaption .point1 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption .point2 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption .point3 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption h6{
+        font-size: 13px; 
+        margin: 10px;
+    }
+    .about .aboutDetails .aboutCaption button{
+        border-radius: 50px;
+        margin: 10px 0px;
+        padding: 10px;
+        width: 120px;
+    }
+    .about .aboutDetails .aboutCaption button a{
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+    }
+    .about .img3Dos img{
+        height: 350px;
+        width: auto;
+    }
+    .aboutCSS{
+        width: 100%;    
+    }
+    .aboutLayout{
+        height: 100vh;
+    }
+    .aboutUS{
+        padding: 80px 0px 40px;
+        width: 100%;
+    }
+    .aboutUS h1{
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    .aboutUS p{
+        margin:10px 40px;
+    }
+    .more{
+        position: relative;
+        top: 150px;
+        top: 100px;
+    }
+    .moreHeder{
+        margin: 15px 140px;
+        text-align: left;
+    }
+    .moreHeder h2{
+        margin: 10px 50px;
+        font-size: 15px;
+    }
+    .moreHeder h2::after{
+        position: absolute;
+        width: 110px;
+        left: 320px;
+        height: 1px;
+        content: "";
+        top: 8px;
+    }
+    .moreHeder h1{
+        margin: 10px 50px;
+        font-size: 25px;
+    }
+    .moreOur{
+        margin: 10px 120px;
+        height: 350px;
+    }
+    .moreOur .vision{
+        padding: 35px;
+        width: 40%;
+    }
+    .moreOur .vision h1{
+        margin: 15px;
+    }
+    .moreOur .vision i{
+        font-size: 40px;
+    }
+    .moreOur .mission{
+        padding: 40px;
+        width: 40%;
+    }
+    .moreOur .mission i{
+        font-size: 40px;
+    }
+    .moreOur .mission h1{
+        margin: 10px;
+    }
+    .soul{
+        margin: 0px 50px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .soul .contantAbout{
+        text-align: left;
+        margin-top: 5%;
+    }
+    .soul .contantAbout h1{
+        font-size: 30px;
+    }
+    .soul .contantAbout p{
+        font-size: 16px;
+    }
+    .soul .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 300px;
+        width: 600px;
+    }
+    .brain{
+        margin: 0px 50px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .brain .contantAbout{
+        text-align: left;
+    }
+    .brain .contantAbout h1{
+        font-size: 30px;
+    }
+    .brain .contantAbout p{
+        font-size: 16px;
+    }
+    .brain .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 300px;
+        width: 600px;
+    }
+    .acadimic{
+        margin: 0px 50px 150px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .acadimic .contantAbout{
+        text-align: left;
+        margin-top: 5%;
+    }
+    .acadimic .contantAbout h1{
+        font-size: 30px;
+    }
+    .acadimic .contantAbout p{
+        font-size: 16px;
+    }
+    .acadimic .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 300px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 1000px){
+    .navBar .nav .navItem li{
+        margin: 20px 20px;
+        font-size: 20px;
+    }
+    .navBar .nav .navItem .socialLink{
+        margin: 0px 40px 0px 30px;
+        padding: 15px;
+    }
+    .about{
+        height: 90vh;
+    }
+    .about .line{
+        padding: 70px 50px 5px;
+        position: relative;
+        font-size: 25px;
+    }
+    .about .line::after{
+        left: 150px;
+        bottom: 20px;
+    }
+    .about .aboutDetails{
+        margin: 0px 50px;
+    }
+    .about .aboutDetails .aboutCaption h1{
+        padding: 0px 0px 20px;
+        font-size: 35px;
+    }
+    .about .aboutDetails .aboutCaption p{
+        font-size: 18px;
+    }
+    .about .aboutDetails .aboutCaption .TMain{
+        padding: 8px;
+        font-size: 13px;
+    }
+    .about .aboutDetails .aboutCaption .point1 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption .point2 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption .point3 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption h6{
+        font-size: 13px; 
+        margin: 10px;
+    }
+    .about .img3Dos img{
+        height: 350px;
+        width: auto;
+    }
+    .aboutCSS{
+        width: 100%;    
+    }
+    .aboutLayout{
+        height: 100vh;
+    }
+    .aboutUS{
+        padding: 80px 0px 40px;
+        width: 100%;
+    }
+    .aboutUS h1{
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    .aboutUS p{
+        margin:10px 40px;
+    }
+    .more{
+        position: relative;
+        top: 150px;
+        top: 100px;
+    }
+    .moreHeder{
+        margin: 15px 60px;
+        text-align: left;
+    }
+    .moreHeder h2{
+        margin: 10px 50px;
+        font-size: 15px;
+    }
+    .moreHeder h2::after{
+        position: absolute;
+        width: 110px;
+        left: 240px;
+        top: 8px;
+    }
+    .moreHeder h1{
+        margin: 10px 50px;
+        font-size: 25px;
+    }
+    .moreOur{
+        margin: 10px 10px;
+        height: 350px;
+    }
+    .moreOur .vision{
+        padding: 35px;
+        width: 40%;
+    }
+    .moreOur .vision h1{
+        margin: 15px;
+    }
+    .moreOur .vision i{
+        font-size: 40px;
+    }
+    .moreOur .mission{
+        padding: 40px;
+        width: 40%;
+    }
+    .moreOur .mission i{
+        font-size: 40px;
+    }
+    .moreOur .mission h1{
+        margin: 10px;
+    }
+    .soul{
+        margin: 0px 50px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .soul .contantAbout{
+        text-align: left;
+        margin-top: 5%;
+    }
+    .soul .contantAbout h1{
+        font-size: 30px;
+    }
+    .soul .contantAbout p{
+        font-size: 16px;
+    }
+    .soul .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 300px;
+        width: 600px;
+    }
+    .brain{
+        margin: 0px 50px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .brain .contantAbout{
+        text-align: left;
+    }
+    .brain .contantAbout h1{
+        font-size: 30px;
+    }
+    .brain .contantAbout p{
+        font-size: 16px;
+    }
+    .brain .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 300px;
+        width: 600px;
+    }
+    .acadimic{
+        margin: 0px 50px 150px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .acadimic .contantAbout{
+        text-align: left;
+        margin-top: 5%;
+    }
+    .acadimic .contantAbout h1{
+        font-size: 30px;
+    }
+    .acadimic .contantAbout p{
+        font-size: 16px;
+    }
+    .acadimic .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 300px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 800px){
+    .navBar .nav .navItem li{
+        display: none;
+    }
+    .navBar .nav .navItem .socialLink{
+        display: none;
+    }
+    .navBar .nav .navItem .toggler i{
+        display: block;
+    }
+    .about{
+        height: 150vh;
+    }
+    .about .line{
+        padding: 70px 50px 5px;
+        position: relative;
+        font-size: 25px;
+    }
+    .about .line::after{
+        left: 150px;
+        bottom: 20px;
+    }
+    .about .aboutDetails{
+        justify-content: center;
+        position: relative;
+        margin: 0px 50px;
+        flex-wrap: wrap;
+    }   
+    .about .aboutDetails .aboutCaption{
+        position: relative;
+        top: 480px;
+    }
+    .about .aboutDetails .aboutCaption h1{
+        position: absolute;
+        top: -480px;
+        padding: 0px 0px 20px;
+        font-size: 35px;
+    }
+    .about .aboutDetails .aboutCaption p{
+        font-size: 18px;
+    }
+    .about .aboutDetails .aboutCaption .TMain{
+        font-size: 13px;
+        padding: 8px;
+    }
+    .about .aboutDetails .aboutCaption .point1 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption .point2 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption .point3 i{
+        margin: 10px 0px;
+    }
+    .about .aboutDetails .aboutCaption h6{
+        font-size: 13px; 
+        margin: 10px;
+    }
+    .about .img3Dos img{
+        position: relative;
+        height: 400px;
+        width: auto;
+        top: -80%;
+    }
+    .footerData{
+        justify-content: space-around;
+        text-align: center;
+        position: relative;
+        font-size: 15px;
+        padding: 50px;
+        height: 30vh;
+    }
+    .footerData .contact{
+        padding: 30x;
+    }
+    .footerData .contact h2{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .footerData .usefulLink{
+        padding: 30x;
+    }
+    .footerData .usefulLink i{
+        justify-content: center;
+        border-radius: 50px;
+        font-size: 18px;
+        padding: 10px;
+        margin: auto;
+        height: 20px;
+        width: 20px;
+    }
+    .footerData .usefulLink h2{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .footerData .ourSponsors{
+        justify-content: center;
+    }
+    .footerData .ourSponsors h2{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .footerData .ourSponsors .amit{
+        padding: 15px;
+    }
+    .footerData .ourSponsors .amit img{
+        height: 35px;
+    }
+    .footerData .ourSponsors .amit a{
+        text-decoration: none;
+        margin: 0px 10px;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .footerData .ourSponsors .ebda3{
+        margin: 0px 40px;
+    }
+    .footerData .ourSponsors .ebda3 img{
+        height: 50px;
+    }
+    .footerData .ourSponsors .ebda3 a{
+        text-decoration: none;
+        font-size: 20px;
+        padding: 15px;
+    }
+    .footerData .footerEnd{
+        position: absolute;
+        bottom: 8px;
+        right: 0;
+        left:0;
+    }
+    .footerData p{
+        font-size: 16px;
+    }
+    .footerData .footerEnd p{
+        font-size: 20px;
+    }
+    .row{
+        justify-content: center;
+        text-align: center;
+        width: 550px;
+        margin: auto;
+    }
+    .aboutCSS{
+        width: 100%;    
+    }
+    .aboutLayout{
+        height: 100vh;
+    }
+    .aboutUS{
+        padding: 80px 0px 40px;
+        width: 100%;
+    }
+    .aboutUS h1{
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    .aboutUS p{
+        margin:10px 40px;
+    }
+    .more{
+        position: relative;
+        top: 150px;
+        top: 100px;
+    }
+    .moreHeder{
+        margin: 15px 60px;
+        text-align: left;
+    }
+    .moreHeder h2{
+        margin: 10px 50px;
+        font-size: 15px;
+    }
+    .moreHeder h2::after{
+        position: absolute;
+        width: 110px;
+        left: 240px;
+        top: 8px;
+    }
+    .moreHeder h1{
+        margin: 10px 50px;
+        font-size: 25px;
+    }
+    .moreOur{
+        margin: 10px 10px;
+        height: 350px;
+    }
+    .moreOur .vision{
+        padding: 35px;
+        width: 40%;
+    }
+    .moreOur .vision h1{
+        margin: 15px;
+    }
+    .moreOur .vision i{
+        font-size: 40px;
+    }
+    .moreOur .mission{
+        padding: 40px;
+        width: 50%;
+    }
+    .moreOur .mission i{
+        font-size: 40px;
+    }
+    .moreOur .mission h1{
+        margin: 10px;
+    }
+    .soul{
+        margin: 0px 50px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .soul .contantAbout{
+        text-align: left;
+        margin-top: 5%;
+    }
+    .soul .contantAbout h1{
+        font-size: 30px;
+    }
+    .soul .contantAbout p{
+        font-size: 16px;
+    }
+    .soul .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 280px;
+        width: 400px;
+    }
+    .brain{
+        margin: 0px 50px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .brain .contantAbout{
+        text-align: left;
+    }
+    .brain .contantAbout h1{
+        font-size: 30px;
+    }
+    .brain .contantAbout p{
+        font-size: 16px;
+    }
+    .brain .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 280px;
+        width: 400px;
+    }
+    .acadimic{
+        margin: 0px 50px 150px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .acadimic .contantAbout{
+        text-align: left;
+        margin-top: 5%;
+    }
+    .acadimic .contantAbout h1{
+        font-size: 30px;
+    }
+    .acadimic .contantAbout p{
+        font-size: 16px;
+    }
+    .acadimic .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 280px;
+        width: 400px;
+    }  
+}
+@media (max-width: 600px) {
+    .navBar .nav .navItem li{
+        display: none;
+    }
+    .navBar .nav .navItem .socialLink{
+        display: none;
+    }
+    .navBar .nav .navItem .toggler i{
+        display: block;
+    }
+    .about{
+        height: 150vh;
+    }
+    .about .line{
+        padding: 70px 50px 5px;
+        font-size: 25px;
+    }
+    .about .line::after{
+        left: 150px;
+        bottom: 20px;
+    }
+    .about .aboutDetails{
+        margin: 0px 50px;
+        flex-wrap: wrap;
+    }   
+    .about .aboutDetails .aboutCaption{
+        top: 500px;
+    }
+    .about .aboutDetails .aboutCaption h1{
+        top: -480px;
+        padding: 0px 0px 20px;
+        font-size: 35px;
+    }
+    .about .aboutDetails .aboutCaption p{
+        font-size: 18px;
+    }
+    .about .aboutDetails .aboutCaption .TMain{
+        font-size: 13px;
+        padding: 2px;
+    }
+    .about .aboutDetails .aboutCaption .point1 i{
+        margin: 5px 0px;
+    }
+    .about .aboutDetails .aboutCaption .point2 i{
+        margin: 5px 0px;
+    }
+    .about .aboutDetails .aboutCaption .point3 i{
+        margin: 5px 0px;
+    }
+    .about .aboutDetails .aboutCaption h6{
+        font-size: 13px; 
+        margin: 5px;
+    }
+    .about .img3Dos img {
+        position: relative;
+        height: 400px;
+        width: auto;
+        top: -75%;
+    }    
+    .footerData{
+        font-size: 15px;
+        padding: 40px;
+        flex-wrap: wrap;
+        height: 50vh;
+    }
+    .footerData .contact{
+        padding: 30x;
+    }
+    .footerData .contact h2{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .footerData .usefulLink{
+        padding: 30x;
+    }
+    .footerData .usefulLink i{
+        justify-content: center;
+        border-radius: 50px;
+        font-size: 18px;
+        padding: 10px;
+        margin: auto;
+        height: 20px;
+        width: 20px;
+    }
+    .footerData .usefulLink h2{
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .footerData .ourSponsors h2{
+        margin: 10px;
+        font-size: 20px;
+    }
+    .footerData .ourSponsors .amit{
+        padding: 5px;
+    }
+    .footerData .ourSponsors .amit img{
+        height: 35px;
+    }
+    .footerData .ourSponsors .amit a{
+        margin: 0px 10px;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .footerData .ourSponsors .ebda3{
+        margin: 0px 40px;
+    }
+    .footerData .ourSponsors .ebda3 img{
+        height: 50px;
+    }
+    .footerData .ourSponsors .ebda3 a{
+        font-size: 20px;
+        padding: 15px;
+    }
+    .footerData .footerEnd{
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left:0;
+    }
+    .footerData p{
+        font-size: 16px;
+    }
+    .footerData .footerEnd p{
+        font-size: 15px;
+    }
+    .row{
+        justify-content: center;
+        text-align: center;
+        width: 300px;
+        margin: auto;
+    }
+    .eventfooterEnd{
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left:0;
+    }
+    .footerData .eventfooterEnd p{
+        font-size: 15px;
+    }
+    .footerData .eventfooterEnd p a{
+        text-decoration: none;
+    }
+    .aboutCSS{
+        width: 100%;    
+    }
+    .aboutLayout{
+        height: 100vh;
+    }
+    .aboutUS{
+        padding: 80px 0px 40px;
+        width: 100%;
+    }
+    .aboutUS h1{
+        margin-top: 5px;
+        font-size: 30px;
+    }
+    .aboutUS p{
+        margin:10px 40px;
+    }
+    .more{
+        position: relative;
+        top: 150px;
+        top: 100px;
+    }
+    .moreHeder{
+        margin: 15px 60px;
+        text-align: left;
+    }
+    .moreHeder h2{
+        margin: 10px 50px;
+        font-size: 15px;
+    }
+    .moreHeder h2::after{
+        position: absolute;
+        width: 110px;
+        left: 240px;
+        top: 8px;
+    }
+    .moreHeder h1{
+        margin: 10px 50px;
+        font-size: 25px;
+    }
+    .moreOur{
+        margin: 10px 10px;
+        height: 410px;
+    }
+    .moreOur .vision{
+        padding: 30px;
+        width: 40%;
+    }
+    .moreOur .vision h1{
+        margin: 15px;
+    }
+    .moreOur .vision i{
+        font-size: 40px;
+    }
+    .moreOur .mission{
+        padding: 40px;
+        width: 50%;
+    }
+    .moreOur .mission i{
+        font-size: 40px;
+    }
+    .moreOur .mission h1{
+        margin: 10px;
+    }
+    .soul{
+        margin: 50px 50px 0px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .soul .contantAbout{
+        text-align: left;
+        margin-top: 5%;
+    }
+    .soul .contantAbout h1{
+        font-size: 30px;
+    }
+    .soul .contantAbout p{
+        font-size: 16px;
+    }
+    .soul .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 250px;
+        width: 300px;
+    }
+    .brain{
+        margin: 0px 50px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .brain .contantAbout{
+        text-align: left;
+    }
+    .brain .contantAbout h1{
+        font-size: 30px;
+    }
+    .brain .contantAbout p{
+        font-size: 16px;
+    }
+    .brain .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 250px;
+        width: 300px;
+    }
+    .acadimic{
+        margin: 0px 50px 150px;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .acadimic .contantAbout{
+        text-align: left;
+        margin-top: 5%;
+    }
+    .acadimic .contantAbout h1{
+        font-size: 30px;
+    }
+    .acadimic .contantAbout p{
+        font-size: 16px;
+    }
+    .acadimic .contantAboutimg img{
+        border-radius: 40px;
+        margin: 15px 25px;
+        height: 250px;
+        width: 300px;
+    }  
+    .footerEndAbout{
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        left:0;
+    }
+    .footerEndAbout p{
+        font-size: 15px;
+    }
+    .footerEndAbout p a{
+        text-decoration: none;
+    }
+}
